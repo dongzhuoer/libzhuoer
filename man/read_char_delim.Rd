@@ -11,7 +11,11 @@ read_char_csv(file)
 read_char_tsv(file)
 }
 \arguments{
-\item{file.}{see \code{\link[readr:read_file]{readr::read_file()}}}
+\item{file.}{see \code{\link[readr:read_file]{readr::read_file()}}. for literal input, string is preferred to character, the latter may casue 'C stack usage 7969182 is too close to the limit' for read_tsv}
+
+\item{delim.}{string. passed on to \code{fun}}
+
+\item{fun.}{function. usually read_* from readr}
 }
 \value{
 \code{\link[tibble:tibble]{tibble::tibble()}}

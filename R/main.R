@@ -7,6 +7,8 @@
 #'   it in quote)
 #'
 #' @param file. see [readr::read_file()]. for literal input, string is preferred to character, the latter may casue 'C stack usage 7969182 is too close to the limit' for read_tsv
+#' @param delim. string. passed on to `fun`
+#' @param fun. function. usually read_* from readr
 #'
 #' @return [tibble::tibble()]
 #'
@@ -40,6 +42,26 @@ readr_char_impl <- function(file, delim, fun) {
 
 	fun(content, T, col_types);
 }
+
+
+
+
+
+
+
+
+
+#' Title
+#'
+#' @return
+#' @export
+#'
+#' @examples
+update_packages <- function() {
+
+}
+
+
 
 
 
