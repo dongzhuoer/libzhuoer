@@ -11,7 +11,10 @@ read_char_csv(file)
 read_char_tsv(file)
 }
 \arguments{
-\item{file.}{see \code{\link[readr:read_file]{readr::read_file()}}. for literal input, string is preferred to character, the latter may casue 'C stack usage 7969182 is too close to the limit' for read_tsv}
+\item{file.}{see \code{\link[readr:read_file]{readr::read_file()}}. for literal input, character will be
+collapse into a single string, since using large character for \code{file}
+parameter may casue 'C stack usage 7969182 is too close to the limit' for
+readr::read_*()}
 
 \item{delim.}{string. passed on to \code{fun}}
 
@@ -26,7 +29,7 @@ read a delimited file, assuming that every column is character
 \details{
 the first line must specify column names. It is used to determine
 columns number as it is unlikely to contain \code{delim} (cell value may contain
-it in quote)
+it in quote).
 }
 \section{to do}{
  unittest
