@@ -1,4 +1,4 @@
-context('Testing read_char_*()')
+context('Testing read-char.R')
 
 test_that("basic usage", {
     expect_equal(read_char_csv('a,b\n1.0,2.0'), tibble::tibble(a = '1.0', b = '2.0'));
