@@ -26,9 +26,6 @@ readr::read_*()}
 \value{
 \code{\link[tibble:tibble]{tibble::tibble()}}
 }
-\description{
-read a delimited file, assuming that every column is character
-}
 \details{
 the first line must specify column names. It is used to determine
 columns number as it is unlikely to contain \code{delim} (cell value may contain

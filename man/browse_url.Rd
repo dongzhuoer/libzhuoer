@@ -16,9 +16,6 @@ same order as that of \code{urls}}
 \value{
 \code{NULL}
 }
-\description{
-open multiple urls sequentially
-}
 \details{
 the sequence maybe unstable when file number become large
 

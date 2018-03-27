@@ -3,6 +3,7 @@
 export(browse_url)
 export(check_gzip)
 export(nested_element)
+export(print_or_T)
 export(read_char_csv)
 export(read_char_csv2)
 export(read_char_tsv)

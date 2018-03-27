@@ -6,6 +6,3 @@
 \usage{
 gzip_integrity(path)
 }
-\description{
-test gzip compressed file integrity
-}

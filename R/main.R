@@ -1,7 +1,24 @@
 
 
-
-
+#' @title print a variable if not empty
+#'
+#' @description print a variable if not empty, otherwise return `T`
+#'
+#' @details extremely useful with `testthat::expect_true()`
+#' @param x
+#'
+#' @return
+#' @export
+#'
+#' @examples
+print_or_T <- function(x) {
+	if (identical(length(x), 0L) || identical(nrow(x), 0L))
+		T
+	else {
+		print(x);
+		F
+	}
+}
 
 
 
