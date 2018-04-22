@@ -49,7 +49,28 @@ readr_char_impl <- function(file, delim, fun) {
 	n_column <- stringr::str_count(header, stringr::fixed(delim)) + 1;
 	col_types <- stringr::str_dup('c', n_column);
 
-	data <- suppressWarnings(fun(content, T, col_types));
-	problematic_row <- unique(readr::problems(data)$row);
-	if (length(problematic_row) == 0L) data else dplyr::slice(data, -problematic_row);
+	suppressWarnings(fun(content, T, col_types)) %>% rm_problematic_row();
 }
+
+
+#' @title remove problematic row after you read_*() a file
+#'
+#' @param data tibble
+#'
+#' @return tibble
+#'
+#' @examples
+#'
+#' @export
+rm_problematic_row <- function(data) {
+	problematic_row <- unique(readr::problems(data)$row);
+	if (length(problematic_row) > 0L) data %<>% dplyr::slice(-problematic_row);
+	data %T>% {attr(., c('problems')) <- NULL}
+}
+
+
+
+
+
+
+
