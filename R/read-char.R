@@ -45,12 +45,9 @@ readr_char_impl <- function(file, delim, fun) {
 	if (length(file) > 1L) file %<>% paste0(collapse = '\n');
 	if (stringr::str_count(file, '\n') == 0L) return(tibble::tibble());
 
-    content <- readr::read_file(file);
-    header <- stringr::str_extract(content, '^[^\n]+');
-	n_column <- stringr::str_count(header, stringr::fixed(delim)) + 1;
-	col_types <- stringr::str_dup('c', n_column);
-
-	suppressWarnings(fun(content, T, col_types)) %>% rm_problematic_row();
+	col_types = readr::cols(.default = readr::col_character())
+    file %>% readr::read_file() %>%
+    	{suppressWarnings(fun(., T, col_types))} %>% rm_problematic_row();
 }
 
 

@@ -9,7 +9,10 @@ testthat::test_that('basic usage', {
 
 testthat::test_that('read_char_*() empty file', {
 	testthat::expect_identical(read_char_tsv('a\tb'), tibble::tibble())
-	testthat::expect_identical(read_char_tsv('a\tb\n'), readr::read_tsv('a\tb\n'))
+	testthat::expect_identical(
+		read_char_tsv('a\tb\n'),
+		readr::read_tsv('a\tb\n',T, readr::cols(.default = readr::col_character()))
+	)
 });
 
 
