@@ -15,7 +15,6 @@
 #'
 #' @return [tibble::tibble()]
 #'
-#' @section  to do: unittest
 #' @examples
 #' read_char_csv("a,b\n1.0,2.0")
 #' read_char_tsv("a\tb\n1.0\t2.0")
@@ -44,6 +43,8 @@ read_char_tsv <- function(file) {
 
 readr_char_impl <- function(file, delim, fun) {
 	if (length(file) > 1L) file %<>% paste0(collapse = '\n');
+	if (stringr::str_count(file, '\n') == 0L) return(tibble::tibble());
+
     content <- readr::read_file(file);
     header <- stringr::str_extract(content, '^[^\n]+');
 	n_column <- stringr::str_count(header, stringr::fixed(delim)) + 1;

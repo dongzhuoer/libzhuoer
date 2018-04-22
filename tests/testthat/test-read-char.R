@@ -7,6 +7,12 @@ testthat::test_that('basic usage', {
 });
 
 
+testthat::test_that('read_char_*() empty file', {
+	testthat::expect_identical(read_char_tsv('a\tb'), tibble::tibble())
+	testthat::expect_identical(read_char_tsv('a\tb\n'), readr::read_tsv('a\tb\n'))
+});
+
+
 testthat::test_that('read_char_*() discard rows with problems', {
     testthat::expect_equal(read_char_tsv('a\tb\tc\n1\n2\t3\n1\t2\t3'), tibble::tibble(a = '1', b = '2', c = '3'));
 });
