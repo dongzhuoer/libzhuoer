@@ -7,10 +7,10 @@
 #' @details extremely useful with `testthat::expect_true()`
 #' @param x
 #'
-#' @return
+#' @return logical scalar
 #' @export
 #'
-#' @examples
+#' @examples print_or_T(letters)
 print_or_T <- function(x) {
 	if (identical(length(x), 0L) || identical(nrow(x), 0L))
 		T
@@ -20,17 +20,6 @@ print_or_T <- function(x) {
 	}
 }
 
-
-
-#' Title
-#'
-#' @return
-#' @export
-#'
-#' @examples
-update_packages <- function() {
-
-}
 
 
 
@@ -56,6 +45,7 @@ update_packages <- function() {
 #' @section legacy: when I support `max_level`, `nested_list(l, fun)` should return all levels as before
 #'
 #' @examples
+#' nested_element(list(1, list(1)))
 #'
 #' @export
 nested_element <- function(element, get_element = function(e){e[sapply(e, is.list)]}) {

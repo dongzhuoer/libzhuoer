@@ -12,6 +12,9 @@ rm_problematic_row(data)
 \value{
 tibble
 }
+\description{
+remove problematic row after you read_*() a file
+}
 \examples{
 
 }

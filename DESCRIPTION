@@ -4,16 +4,18 @@ Title: utility functions dependented by my other packages
 Version: 0.0.0.9000
 Authors@R: person("Zhuoer", "Dong", email = "dongzhuoer@mail.nankai.edu.cn", 
     role = c("aut", "cre"))
-Description: utility functions, my other packages may depend on them.
+Description: refer to https://dongzhuoer.github.io/libzhuoer
+URL: https://github.com/dongzhuoer/libzhuoer
+BugReports: https://github.com/dongzhuoer/libzhuoer/issues
 License: file LICENSE
 Encoding: UTF-8
 LazyData: true
-SystemRequirements: sleep command
-RoxygenNote: 6.0.1.9000
-Roxygen: list(markdown = TRUE, roclets=c('rd', 'collate', 'namespace', 'vignette'))
+RoxygenNote: 6.1.1
+Roxygen: list(markdown = TRUE, roclets=c('rd', 'collate', 'namespace'))
 Imports: 
     magrittr,
     plyr,
     readr,
     stringr,
     dplyr
+VignetteBuilder: knitr

@@ -26,15 +26,21 @@ readr::read_*()}
 \value{
 \code{\link[tibble:tibble]{tibble::tibble()}}
 }
+\description{
+read a delimited file, assuming that every column is character
+}
 \details{
 the first line must specify column names. It is used to determine
 columns number as it is unlikely to contain \code{delim} (cell value may contain
 it in quote).
-}
-\section{to do}{
- unittest
-}
 
+three feature:
+\enumerate{
+\item collapse character to string
+\item reject non-existant file (character scalar)
+\item remove problematic row
+}
+}
 \examples{
 read_char_csv("a,b\\n1.0,2.0")
 read_char_tsv("a\\tb\\n1.0\\t2.0")

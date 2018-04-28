@@ -1,4 +1,5 @@
 testthat::context('Testing main.R')
+if (basename(getwd()) == 'testthat') setwd('../..')  # workspace is reset per file
 
 
 testthat::test_that("print_or_T() on vector", {
@@ -18,4 +19,11 @@ testthat::test_that("print_or_T() on tibble", {
 		testthat::expect_false(print_or_T(tibble::tibble(x = 1:5))),
 		'x'
 	);
+})
+
+
+testthat::test_that("run nested_element()", {
+	testthat::expect_true(T);
+
+	nested_element(list(1, list(1)))
 })

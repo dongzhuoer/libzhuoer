@@ -9,9 +9,15 @@ print_or_T(x)
 \arguments{
 \item{x}{}
 }
+\value{
+logical scalar
+}
 \description{
 print a variable if not empty, otherwise return \code{T}
 }
 \details{
 extremely useful with \code{testthat::expect_true()}
+}
+\examples{
+print_or_T(letters)
 }

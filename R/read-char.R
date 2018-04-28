@@ -6,6 +6,11 @@
 #'   columns number as it is unlikely to contain `delim` (cell value may contain
 #'   it in quote).
 #'
+#' three feature:
+#' 1. collapse character to string
+#' 1. reject non-existant file (character scalar)
+#' 1. remove problematic row
+#'
 #' @param file. see [readr::read_file()]. for literal input, character will be
 #'   collapse into a single string, since using large character for `file`
 #'   parameter may casue 'C stack usage 7969182 is too close to the limit' for

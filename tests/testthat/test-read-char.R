@@ -1,4 +1,6 @@
 testthat::context('Testing read-char.R')
+if (basename(getwd()) == 'testthat') setwd('../..')  # workspace is reset per file
+
 
 testthat::test_that('basic usage', {
     testthat::expect_equal(read_char_csv('a,b\n1.0,2.0'), tibble::tibble(a = '1.0', b = '2.0'));

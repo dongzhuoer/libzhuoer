@@ -12,6 +12,9 @@ check_gzip(path)
 \value{
 character. path of broken gzip files
 }
+\description{
+check integrity of gzip files in a directory
+}
 \examples{
 NULL
 }
