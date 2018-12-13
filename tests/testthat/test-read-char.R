@@ -24,9 +24,9 @@ testthat::test_that('read_char_*() discard rows with problems', {
 
 
 testthat::test_that('rm_problematic_row()', {
-	testthat::expect_identical(
+	testthat::expect_equal(
 		suppressWarnings(read_char_tsv('a\tb\tc\n1\n2\t3\n1\t2\t3')) %>%
-			rm_problematic_row() %T>% {attr(., c('spec')) <- NULL},
+			rm_problematic_row(),
 		tibble::tibble(a = '1', b = '2', c = '3')
 	)
 })
