@@ -1,7 +1,7 @@
 Package: libzhuoer
 Type: Package
 Title: utility functions dependented by my other packages
-Version: 0.0.0.9000
+Version: 0.2.0
 Authors@R: person("Zhuoer", "Dong", email = "dongzhuoer@mail.nankai.edu.cn", 
     role = c("aut", "cre"))
 Description: refer to https://dongzhuoer.github.io/libzhuoer
@@ -18,4 +18,4 @@ Imports:
     readr,
     stringr,
     dplyr
-VignetteBuilder: knitr
+VignetteBuilder: knitr, rmarkdown
