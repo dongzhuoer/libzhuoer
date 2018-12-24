@@ -5,7 +5,7 @@ Version: 0.2.0
 Authors@R: person("Zhuoer", "Dong", email = "dongzhuoer@mail.nankai.edu.cn", 
     role = c("aut", "cre"))
 Description: refer to https://dongzhuoer.github.io/libzhuoer
-URL: https://github.com/dongzhuoer/libzhuoer
+URL: https://dongzhuoer.github.io/libzhuoer, https://github.com/dongzhuoer/libzhuoer
 BugReports: https://github.com/dongzhuoer/libzhuoer/issues
 License: file LICENSE
 Encoding: UTF-8
