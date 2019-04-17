@@ -1,5 +1,5 @@
 testthat::context('Testing main.R')
-if (basename(getwd()) == 'testthat') setwd('../..')  # workspace is reset per file
+setwd(here::here(''))  # workspace is reset per file
 
 
 testthat::test_that("print_or_T() on vector", {
