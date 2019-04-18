@@ -19,5 +19,9 @@ print a variable if not empty, otherwise return \code{T}
 extremely useful with \code{testthat::expect_true()}
 }
 \examples{
+print_or_T(logical())
 print_or_T(letters)
+
+print_or_T(tibble::tibble())
+print_or_T(tibble::tibble(x = 1:5))
 }

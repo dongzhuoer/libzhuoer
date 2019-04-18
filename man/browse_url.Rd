@@ -20,11 +20,13 @@ same order as that of \code{urls}}
 open multiple urls sequentially
 }
 \details{
-the sequence maybe unstable when file number become large
+The sequence maybe unstable when file number become large
 
 It depends on external command (\code{system('sleep 0.2')}).
 }
-\section{demo}{
- \code{libzhuoer::browse_url(c('https://www.bing.com/', 'https://zhuoer.netlify.com/'), 0.4)}
+\examples{
+\dontrun{
+    browse_url(c('https://www.bing.com/', 'https://dongzhuoer.com/'), 0.4)
 }
 
+}

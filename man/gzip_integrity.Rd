@@ -2,10 +2,21 @@
 % Please edit documentation in R/file.R
 \name{gzip_integrity}
 \alias{gzip_integrity}
-\title{test gzip compressed file integrity}
+\title{check \code{.gz} file integrity}
 \usage{
 gzip_integrity(path)
 }
+\arguments{
+\item{path}{character. path to the \code{.gz} file to be checked.}
+}
+\value{
+logical scalar. whether the \code{.gz} file is integrated.
+}
 \description{
-test gzip compressed file integrity
+check \code{.gz} file integrity
+}
+\examples{
+gzip_integrity(system.file('extdata/good.gz', package = 'libzhuoer'))
+gzip_integrity(system.file('extdata/bad.gz', package = 'libzhuoer'))
+
 }

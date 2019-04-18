@@ -9,7 +9,15 @@ template:
     params:
         bootswatch: cerulean
 
-
+reference:
+    - title: file
+      contents: [check_gzip, gzip_integrity]
+    - title: read
+      contents: [cols_char, rm_problematic_row]
+    - title: read
+      contents: [browse_url]
+    - title: other
+      contents: [print_or_T, nested_element]
 
 
 

@@ -2,19 +2,22 @@
 % Please edit documentation in R/file.R
 \name{check_gzip}
 \alias{check_gzip}
-\title{check integrity of gzip files in a directory}
+\title{check integrity of \code{.gz} files in a directory}
 \usage{
 check_gzip(path)
 }
 \arguments{
-\item{path}{character. path to the folder(s) containing gzip files}
+\item{path}{character. path to the folder(s) containing \code{.gz} files.}
 }
 \value{
-character. path of broken gzip files
+character. path of broken \code{.gz} files.
 }
 \description{
-check integrity of gzip files in a directory
+check integrity of \code{.gz} files in a directory
 }
 \examples{
-NULL
+dir(system.file('extdata', package = 'libzhuoer'), full = T)
+
+check_gzip(system.file('extdata', package = 'libzhuoer'))
+
 }

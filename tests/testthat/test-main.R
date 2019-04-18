@@ -22,8 +22,6 @@ testthat::test_that("print_or_T() on tibble", {
 })
 
 
-testthat::test_that("run nested_element()", {
-	testthat::expect_true(T);
-
+testthat::test_that("nested_element()", {
 	nested_element(list(1, list(1)))
 })
