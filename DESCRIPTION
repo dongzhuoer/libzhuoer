@@ -18,4 +18,6 @@ Imports:
     readr,
     stringr,
     dplyr
+Suggests:
+    prettydoc
 VignetteBuilder: knitr, rmarkdown
