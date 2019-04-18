@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>check integrity of gzip files in a directory — check_gzip • libzhuoer</title>
+<title>check integrity of <code>.gz</code> files in a directory — check_gzip • libzhuoer</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,9 +30,9 @@
 
 
 
-<meta property="og:title" content="check integrity of gzip files in a directory — check_gzip" />
+<meta property="og:title" content="check integrity of <code>.gz</code> files in a directory — check_gzip" />
 
-<meta property="og:description" content="check integrity of gzip files in a directory" />
+<meta property="og:description" content="check integrity of .gz files in a directory" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">libzhuoer</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.3.0</span>
       </span>
     </div>
 
@@ -105,14 +105,14 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>check integrity of gzip files in a directory</h1>
+    <h1>check integrity of <code>.gz</code> files in a directory</h1>
     <small class="dont-index">Source: <a href='https://github.com/dongzhuoer/libzhuoer/blob/master/R/file.R'><code>R/file.R</code></a></small>
     <div class="hidden name"><code>check_gzip.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>check integrity of gzip files in a directory</p>
+    <p>check integrity of <code>.gz</code> files in a directory</p>
     
     </div>
 
@@ -123,17 +123,20 @@
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>path</th>
-      <td><p>character. path to the folder(s) containing gzip files</p></td>
+      <td><p>character. path to the folder(s) containing <code>.gz</code> files.</p></td>
     </tr>
     </table>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>character. path of broken gzip files</p>
+    <p>character. path of broken <code>.gz</code> files.</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>NULL</span></div><div class='output co'>#&gt; NULL</div></pre>
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/list.files'>dir</a></span>(<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/system.file'>system.file</a></span>(<span class='st'>'extdata'</span>, <span class='kw'>package</span> <span class='kw'>=</span> <span class='st'>'libzhuoer'</span>), <span class='kw'>full</span> <span class='kw'>=</span> <span class='no'>T</span>)</div><div class='output co'>#&gt; [1] "/home/travis/dongzhuoer/libzhuoer/inst/extdata/bad.gz" 
+#&gt; [2] "/home/travis/dongzhuoer/libzhuoer/inst/extdata/good.gz"</div><div class='input'>
+<span class='fu'>check_gzip</span>(<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/system.file'>system.file</a></span>(<span class='st'>'extdata'</span>, <span class='kw'>package</span> <span class='kw'>=</span> <span class='st'>'libzhuoer'</span>))</div><div class='output co'>#&gt; [1] "/home/travis/dongzhuoer/libzhuoer/inst/extdata/bad.gz"</div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

@@ -60,7 +60,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">libzhuoer</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.3.0</span>
       </span>
     </div>
 
@@ -106,12 +106,42 @@
       <small>Source: <a href='https://github.com/dongzhuoer/libzhuoer/blob/master/NEWS.md'><code>NEWS.md</code></a></small>
     </div>
 
-    <div id="libzhuoer-020" class="section level1">
+    <div id="libzhuoer-030" class="section level1">
 <h1 class="page-header">
-<a href="#libzhuoer-020" class="anchor"></a>libzhuoer 0.2.0</h1>
+<a href="#libzhuoer-030" class="anchor"></a>libzhuoer 0.3.0</h1>
+<div id="breaking-changes" class="section level2">
+<h2 class="hasAnchor">
+<a href="#breaking-changes" class="anchor"></a>Breaking changes</h2>
+<ol>
+<li>
+<p>introduce <code><a href="../reference/cols_char.html">cols_char()</a></code> to supersede <code>read_char_*()</code></p>
+<p>Formerly I write that wrapper function and try to handle various situations. When I want to fix a bug, I realise that the real world is too complicated. Actually the core point is to set default column type to character, which can be easily accomplished by <code><a href="https://readr.tidyverse.org/reference/cols.html">readr::cols(..., .default = readr::col_character())</a></code>.</p>
+</li>
+<li><p>remove unused function <code>initiate_dir()</code></p></li>
+</ol>
+</div>
 <div id="new-features" class="section level2">
 <h2 class="hasAnchor">
 <a href="#new-features" class="anchor"></a>New features</h2>
+<ol>
+<li>add or enrich example for every function</li>
+</ol>
+</div>
+<div id="minor-improvements-and-fixes" class="section level2">
+<h2 class="hasAnchor">
+<a href="#minor-improvements-and-fixes" class="anchor"></a>Minor improvements and fixes</h2>
+<ol>
+<li>
+<code><a href="../reference/gzip_integrity.html">gzip_integrity()</a></code> correct return <code>FALSE</code> for broken file now</li>
+</ol>
+</div>
+</div>
+    <div id="libzhuoer-020" class="section level1">
+<h1 class="page-header">
+<a href="#libzhuoer-020" class="anchor"></a>libzhuoer 0.2.0</h1>
+<div id="new-features-1" class="section level2">
+<h2 class="hasAnchor">
+<a href="#new-features-1" class="anchor"></a>New features</h2>
 <ol>
 <li>improve documentation (mainly add pkgdown)</li>
 </ol>
@@ -120,9 +150,9 @@
     <div id="libzhuoer-010" class="section level1">
 <h1 class="page-header">
 <a href="#libzhuoer-010" class="anchor"></a>libzhuoer 0.1.0</h1>
-<div id="new-features-1" class="section level2">
+<div id="new-features-2" class="section level2">
 <h2 class="hasAnchor">
-<a href="#new-features-1" class="anchor"></a>New features</h2>
+<a href="#new-features-2" class="anchor"></a>New features</h2>
 <ol>
 <li>open multiple urls sequentially in browser</li>
 <li>check integrity of gzip files in a directory</li>
@@ -137,6 +167,7 @@
     <div id="tocnav">
       <h2>Contents</h2>
       <ul class="nav nav-pills nav-stacked">
+        <li><a href="#libzhuoer-030">0.3.0</a></li>
         <li><a href="#libzhuoer-020">0.2.0</a></li>
         <li><a href="#libzhuoer-010">0.1.0</a></li>
       </ul>

@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">libzhuoer</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.3.0</span>
       </span>
     </div>
 
@@ -139,14 +139,15 @@ same order as that of <code>urls</code></p></td>
     
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>the sequence maybe unstable when file number become large</p>
+    <p>The sequence maybe unstable when file number become large</p>
 <p>It depends on external command (<code><a href='https://www.rdocumentation.org/packages/base/topics/system'>system('sleep 0.2')</a></code>).</p>
     
-    <h2 class="hasAnchor" id="demo"><a class="anchor" href="#demo"></a>demo</h2>
 
-    <p><code>libzhuoer::browse_url(c('https://www.bing.com/', 'https://zhuoer.netlify.com/'), 0.4)</code></p>
-    
-
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><span class='co'># NOT RUN {</span>
+    <span class='fu'>browse_url</span>(<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/c'>c</a></span>(<span class='st'>'https://www.bing.com/'</span>, <span class='st'>'https://dongzhuoer.com/'</span>), <span class='fl'>0.4</span>)
+<span class='co'># }</span><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -156,9 +157,9 @@ same order as that of <code>urls</code></p></td>
       <li><a href="#value">Value</a></li>
 
       <li><a href="#details">Details</a></li>
-
-      <li><a href="#demo">demo</a></li>
-          </ul>
+      
+      <li><a href="#examples">Examples</a></li>
+    </ul>
 
   </div>
 </div>

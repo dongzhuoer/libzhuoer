@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>test gzip compressed file integrity — gzip_integrity • libzhuoer</title>
+<title>check <code>.gz</code> file integrity — gzip_integrity • libzhuoer</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,9 +30,9 @@
 
 
 
-<meta property="og:title" content="test gzip compressed file integrity — gzip_integrity" />
+<meta property="og:title" content="check <code>.gz</code> file integrity — gzip_integrity" />
 
-<meta property="og:description" content="test gzip compressed file integrity" />
+<meta property="og:description" content="check .gz file integrity" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">libzhuoer</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.3.0</span>
       </span>
     </div>
 
@@ -105,25 +105,46 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>test gzip compressed file integrity</h1>
+    <h1>check <code>.gz</code> file integrity</h1>
     <small class="dont-index">Source: <a href='https://github.com/dongzhuoer/libzhuoer/blob/master/R/file.R'><code>R/file.R</code></a></small>
     <div class="hidden name"><code>gzip_integrity.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>test gzip compressed file integrity</p>
+    <p>check <code>.gz</code> file integrity</p>
     
     </div>
 
     <pre class="usage"><span class='fu'>gzip_integrity</span>(<span class='no'>path</span>)</pre>
-        
+    
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>path</th>
+      <td><p>character. path to the <code>.gz</code> file to be checked.</p></td>
+    </tr>
+    </table>
+    
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
+    <p>logical scalar. whether the <code>.gz</code> file is integrated.</p>
+    
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'>gzip_integrity</span>(<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/system.file'>system.file</a></span>(<span class='st'>'extdata/good.gz'</span>, <span class='kw'>package</span> <span class='kw'>=</span> <span class='st'>'libzhuoer'</span>))</div><div class='output co'>#&gt; [1] TRUE</div><div class='input'><span class='fu'>gzip_integrity</span>(<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/system.file'>system.file</a></span>(<span class='st'>'extdata/bad.gz'</span>, <span class='kw'>package</span> <span class='kw'>=</span> <span class='st'>'libzhuoer'</span>))</div><div class='output co'>#&gt; [1] FALSE</div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-                </ul>
+      <li><a href="#arguments">Arguments</a></li>
+      
+      <li><a href="#value">Value</a></li>
+      
+      <li><a href="#examples">Examples</a></li>
+    </ul>
 
   </div>
 </div>
