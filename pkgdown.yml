@@ -1,9 +1,0 @@
-pandoc: 2.7.3
-pkgdown: 1.4.1
-pkgdown_sha: ~
-articles:
-  libzhuoer: libzhuoer.html
-urls:
-  reference: https://dongzhuoer.github.io/libzhuoer/reference
-  article: https://dongzhuoer.github.io/libzhuoer/articles
-
