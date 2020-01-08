@@ -4,8 +4,8 @@ Title: utility functions dependented by my other packages
 Version: 0.3.0
 Authors@R: person("Zhuoer", "Dong", email = "dongzhuoer@mail.nankai.edu.cn", 
     role = c("aut", "cre"))
-Description: refer to https://dongzhuoer.github.io/libzhuoer
-URL: https://dongzhuoer.github.io/libzhuoer, https://github.com/dongzhuoer/libzhuoer
+Description: refer to https://github.com/dongzhuoer/libzhuoer
+URL: https://pkgdown.dongzhuoer.com/dongzhuoer/libzhuoer, https://github.com/dongzhuoer/libzhuoer
 BugReports: https://github.com/dongzhuoer/libzhuoer/issues
 License: file LICENSE
 Encoding: UTF-8
