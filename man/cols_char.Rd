@@ -11,7 +11,7 @@ cols_char(..., .default = readr::col_character())
 }
 \description{
 Sometimes most column types are character, but \strong{readr} use
-\code{\link[readr:col_guess]{readr::col_guess()}} by default, thus I write this toy function.
+\code{\link[readr:parse_guess]{readr::col_guess()}} by default, thus I write this toy function.
 }
 \examples{
 example_csv <- readr::readr_example('mtcars.csv')

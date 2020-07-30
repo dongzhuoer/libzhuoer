@@ -1,4 +1,4 @@
-testthat::context('Testing main.R')
+testthat::context('Testing file.R')
 setwd(here::here(''))  # workspace is reset per file
 
 

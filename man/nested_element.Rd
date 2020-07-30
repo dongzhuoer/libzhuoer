@@ -4,8 +4,10 @@
 \alias{nested_element}
 \title{get nested elements}
 \usage{
-nested_element(element, get_element = function(e) {     e[sapply(e,
-  is.list)] })
+nested_element(
+  element,
+  get_element = function(e) {     e[sapply(e, is.list)] }
+)
 }
 \arguments{
 \item{element}{usually list. the outermost element.}

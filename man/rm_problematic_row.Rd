@@ -16,7 +16,7 @@ tibble
 remove problematic rows after you \link[readr:read_delim]{readr::read_*()} a file
 }
 \examples{
-problematic_df <- readr::read_tsv('a\\tb\\tc\\n1\\n2\\t3\\n1\\t2\\t3')
+problematic_df <- readr::read_tsv('a\tb\tc\n1\n2\t3\n1\t2\t3')
 
 problematic_df
 
